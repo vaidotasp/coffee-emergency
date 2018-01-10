@@ -1,3 +1,3 @@
 # Work In Progress...
 
-# An app to help you find your daily fix of coffee based on location
+An app to help you find your daily fix of coffee based on location

@@ -1,0 +1,30 @@
+{
+  "name": "coffee-emergency",
+  "version": "1.0.0",
+  "description": "coffee shop finder based on location",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "production": "NODE_ENV=production webpack",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaidotasp/coffee-emergency.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vaidotasp/coffee-emergency/issues"
+  },
+  "homepage": "https://github.com/vaidotasp/coffee-emergency#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "uglifyjs-webpack-plugin": "^1.1.6",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.10.1"
+  }
+}
