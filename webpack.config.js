@@ -1,11 +1,13 @@
 const webpack = require('webpack')
 const path = require('path')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 let config = {
+  devtool: 'eval-source-map', //this should stop console yelling at me!
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, './public'),
+    path: __dirname + '/build',
     filename: 'bundle.js'
   },
   module: {
@@ -17,7 +19,13 @@ let config = {
       }
     ]
   },
-  plugins: []
+  plugins: [
+    new HtmlWebpackPlugin({
+      //this should be able to handle pug with correct loader
+      title: 'Coffee Emergency Finder',
+      template: 'src/my-index.html'
+    })
+  ]
 }
 
 module.exports = config
