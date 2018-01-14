@@ -15,7 +15,7 @@ let config = {
       {
         test: /\.js$/, //files ending with .js
         exclude: /node_modules/,
-        loader: 'babel-loader'
+        loader: 'babel-loader' //this loader should transform ES6+ code into compatabile stuff
       }
     ]
   },

@@ -1,0 +1,39 @@
+body {
+  background-color: tan;
+}
+
+/* Removing stepper arrows:BEGIN */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+/* Removing stepper arrows:END */
+
+/* ZIP Input Bar Validation Display and styling */
+input[type='number'] {
+  width: 15rem;
+  height: 2rem;
+  font-size: 1rem;
+}
+
+input[type='submit'] {
+  width: 5rem;
+  height: 2rem;
+  font-size: 1rem;
+}
+input[type='number']:invalid {
+  border: 2px dashed red;
+}
+
+/* input[type='number']:valid {
+  border: 2px solid black;
+} */
+
+#map {
+  height: 70vh;
+  width: 50vw;
+}

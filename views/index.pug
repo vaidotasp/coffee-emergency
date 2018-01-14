@@ -5,5 +5,15 @@ html
     meta(name="viewport", content="width=device-width, initial-scale=1")
     link(rel="stylesheet", href="/styles.css")
   body
-    h1 What is this app about
+    h1 Emergency Coffee Finder
+    div(class="input-section")
+      laber(for="zip") Input Zip
+      input(id="zip", type="number", placeholder="ZIP CODE", max="99999")
+      input(id="enter", type="submit", value="enter")
+    div(id="map")
+    div(id="right-panel")
+      h2 Results
+      ul(id="places")
+      button(id="more") More
     script(src="/client.js")
+    
