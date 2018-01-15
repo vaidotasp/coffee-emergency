@@ -20,11 +20,11 @@ input[type='number'] {
   font-size: 1rem;
 }
 
-input[type='submit'] {
+/* input[type='submit'] {
   width: 5rem;
   height: 2rem;
   font-size: 1rem;
-}
+} */
 input[type='number']:invalid {
   border: 2px dashed red;
 }
